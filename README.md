@@ -1,13 +1,11 @@
 # Scanpy misc functions
 ## Usage
 ```
-import sys
-sys.path.append('/home/vs401/scanpy')
-import config as cf
+import scvm
 ```
 ## Help
 ```
->> help(cf)
+>> help(scvm)
 Help on package config:
 
 NAME
