@@ -18,3 +18,4 @@ help(scvm)
 ## Documentation
 `adata.describe()`: Describes the type of data in adata.X = raw/norm/log/scaled
 
+scvm.pl.umap3d(): 3D umap
