@@ -3,7 +3,7 @@ import numpy as np
 
 def is_outlier(adata, 
                metric: str, 
-               nmads: int):
+               nmads: int) -> list:
     """
     Function from best practices for scrnaseq handbook
     adata: anndata obj
