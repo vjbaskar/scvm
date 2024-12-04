@@ -1,4 +1,4 @@
-from .globimport import *
+from ..globimport import *
 
 class Gsea:
     """
@@ -49,10 +49,11 @@ class Gsea:
         
         genelist = df.names[0:100].str.upper().values.tolist()
         enr = gp.enrichr(gene_list=genelist, # or "./tests/data/gene_list.txt",
-                     gene_sets=['PanglaoDB_Augmented_2021'],
+                     gene_sets=gene_sets,
                      organism=organism, 
                              **kwargs
                     )
+        print(enr)
         return enr.results
     
     def getdb(self):
